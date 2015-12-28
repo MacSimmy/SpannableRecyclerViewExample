@@ -58,8 +58,9 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
                   // something like that..
                 /* Intent intent = new Intent(mContext,ResultActivity.class);
                  intent.putExtra("MY_DATA",mDataItem);   //If you want to pass data.
-                 intent.putExtra("CLICKED_ITEM_POSTION",this.getAdapterPosition()); // If one want to get selected item position
+                 intent.putExtra("CLICKED_ITEM_POSTION",getAdapterPosition()); // If one want to get selected item position
                  startActivity(intent);*/
+                 Toast.makeText(mContext,"You clicked item number "+ViewHolder.this.getAdapterPosition(),Toast.LENTH_SHORT).show();
                 }
             });
         }
